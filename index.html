@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  <title>Shortly</title>
+</head>
+<body>
+  <!-- Nav container -->
+   <nav class="relative container mx-auto py-6">
+    <!-- Flex container for all items -->
+     <div class="flex items-center justify-between">
+      <!-- Flex container for logo and the menu -->
+       <div class="flex items-center space-x-20">
+        <img src="./images/logo.svg" alt="">
+        <!-- left menu -->
+         <div class="hidden lg:flex space-x-8 font-bold">
+          <a href="#" class="text-grayishViolet hover:text-veryDarkViolet">Features</a>
+          <a href="#" class="text-grayishViolet hover:text-veryDarkViolet">Pricing</a>
+          <a href="#" class="text-grayishViolet hover:text-veryDarkViolet">Resources</a>
+         </div>
+       </div>
+       <!-- Right buttons menu -->
+        <div class="hidden lg:flex items-center font-bold space-x-6 text-gray-600">
+          <div class="hover:text-violet-600">Login</div>
+          <a href="#" class="px-8 py-3 font-bold text-white bg-cyan-400 rounded-full hover:opacity-70">Sign Up</a>
+        </div>
+        <!-- harmburger menu -->
+     </div>
+     <!-- mobile menu -->
+   </nav>
+   <!-- Hero section -->
+    <section id="hero">
+      <!-- Hero container -->
+       <div class="flex flex-col-reverse container mx-auto p-6 lg:flex-row">
+        <!-- Content container -->
+          <div class="flex flex-col space-y-10 mb-44 lg:mt-16 lg:w-1/2 xl:mb-52">
+            <h1 class="text-5xl font-bold text-center lg:text-6xl lg:max-w-md lg:text-left">
+              More than just shorter links
+            </h1>
+            <p class="text-2xl text-center text-gray-500 lg:max-w-md lg:text-left">
+              Build your brand's recognition and get detailed insights on how your links are performing!
+            </p>
+            <div class="mx-auto lg:mx-0">
+              <a href="#" class="py-5 px-10 text-2xl font-bold text-white bg-cyan-400 rounded-full lg:py-4 hover:opacity-70">Get started</a>
+            </div>
+          </div>
+        <!-- Image -->
+         <div class="mb-24 mx-auto md:w-[32rem] lg:w-1/2 lg:mb-0">
+          <img src="/images/illustration-working.svg" alt="">
+         </div>
+       </div>
+    </section>
+    <!-- Shorten section -->
+     <section id="shorten" class="relative bg-gray-100">
+      <div class="max-w-4xl mx-auto p-6 space-y-6">
+        <!-- form -->
+         <form id="link-form" class="relative flex flex-col w-full p-10 -mt-20 space-y-4 bg-violet-700 rounded-lg md:flex-row md:space-y-0 md:space-x-3">
+            <input type="text" placeholder="Shorten a link here" id="link-input" class="flex-1 p-3 border-2 rounded-lg placeholder-yellow-500 focus:outline-none">
+            <button type="button" class="px-10 py-2 text-white bg-cyan-300 rounded-lg hover:bg-cyan-200 hover:outline-none md:py-2">
+              Shorten it!
+            </button>
+          </form>
+          <div class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
+            <p class="font-bold text-center text-violet-700 md:text-left">
+              https://frontendmentor.io
+            </p>
+            <div class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0">
+              <div class="font-bold text-cyan-400">
+                https://rel.ink/k4IKyK
+              </div>
+              <button type="button" class="py-2 px-8 text-white bg-cyan-400 rounded-lg hover:opacity-70 focus:outline-none">
+                Copy
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
+            <p class="font-bold text-center text-violet-700 md:text-left">
+              https://twitter.com.frontendmentor
+            </p>
+            <div class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0">
+              <div class="font-bold text-cyan-400">
+                https://rel.ink/k4IKyK
+              </div>
+              <button type="button" class="py-2 px-8 text-white bg-gray-900 rounded-lg hover:opacity-70 focus:outline-none">
+                Copy
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
+            <p class="font-bold text-center text-violet-700 md:text-left">
+              https://linkedIn.com.frontendmentor
+            </p>
+            <div class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0">
+              <div class="font-bold text-cyan-400">
+                https://rel.ink/k4IKyK
+              </div>
+              <button type="button" class="py-2 px-8 text-white bg-cyan-400 rounded-lg hover:opacity-70 focus:outline-none">
+                Copy
+              </button>
+            </div>
+          </div>
+      </div>
+     </section>
+</body>
+</html>
